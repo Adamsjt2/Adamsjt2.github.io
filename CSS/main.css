@@ -1,0 +1,78 @@
+/* CSS class for JavaScript to hide image captions */
+.imgCaptionHide {
+    display: none;
+}
+/* Adding backgrounds */
+#Welcome {
+    background: rgb(255, 88, 116);
+}
+
+.content {
+    background-image: url(../images/Background1.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+/* Styling images */
+#headerImg {
+    border-radius: 50%;
+    max-height: 200px;
+    max-width: 200px;
+    margin: auto;
+}
+
+#bio_image {
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 50%;
+}
+
+.click_image {
+    border-radius: 20%;
+    max-height: 300px;
+    max-width: 250px;
+}
+.click_image:hover {
+    cursor: pointer;
+    border: 5px solid hotpink;
+}
+
+/* Styling navbar links */
+.navButtons a:hover {
+    padding: 5px;
+    background:  rgb(206, 63, 194);
+}
+
+/* Misc */
+p {
+    font-size: .75rem;
+}
+main {
+    padding: 0 0 0;
+}
+body {
+    font-family: cursive;
+    color: white;
+}
+
+.gallery {
+    justify-content: space-around;
+}
+
+.copyright {
+    padding-bottom: 100px;
+}
+
+/* Print media query */
+@media print {
+
+.imgCaptionHide { display: block;}
+
+#bio_image, .click_image { display: none; }
+
+h1 { margin: auto; }
+
+.bioHeading { display: none }
+
+body { color: black; }
+}
